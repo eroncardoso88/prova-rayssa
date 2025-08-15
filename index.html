@@ -1117,9 +1117,7 @@
         // Function to match UTM configuration
         function matchUTMConfiguration(utmParams) {
             return utmConfigurations.find(config =>
-                config.utm_source === utmParams.utm_source &&
-                config.utm_medium === utmParams.utm_medium &&
-                config.utm_campaign === utmParams.utm_campaign
+                config.utm_source === utmParams.utm_source
             );
         }
 
