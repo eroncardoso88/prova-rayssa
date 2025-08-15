@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +57,7 @@
             top: 0;
             z-index: 1000;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         }
 
         @media (prefers-color-scheme: dark) {
@@ -75,7 +76,7 @@
             font-size: 1.8rem;
             font-weight: bold;
             color: var(--primary-color);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         /* Hero Section */
@@ -111,8 +112,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
-            50% { transform: translateY(-30px) rotate(5deg) scale(1.05); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+            }
+
+            50% {
+                transform: translateY(-30px) rotate(5deg) scale(1.05);
+            }
         }
 
         .hero-content {
@@ -130,12 +138,19 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             animation: slideInUp 1s ease-out;
-            text-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         @keyframes slideInUp {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero .subtitle {
@@ -177,7 +192,7 @@
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
             font-size: 1.1rem;
         }
 
@@ -193,7 +208,7 @@
         }
 
         .btn-secondary {
-            background: rgba(255,255,255,0.9);
+            background: rgba(255, 255, 255, 0.9);
             color: var(--primary-color);
             border: 2px solid var(--primary-color);
             backdrop-filter: blur(10px);
@@ -255,10 +270,10 @@
             font-weight: 600;
             margin-bottom: 2rem;
             padding: 30px;
-            background: linear-gradient(135deg, var(--accent-color), rgba(255,255,255,0.8));
+            background: linear-gradient(135deg, var(--accent-color), rgba(255, 255, 255, 0.8));
             border-radius: 20px;
             border-left: 6px solid var(--primary-color);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         @media (prefers-color-scheme: dark) {
@@ -302,12 +317,12 @@
         }
 
         .service-card {
-            background: rgba(255,255,255,0.9);
+            background: rgba(255, 255, 255, 0.9);
             padding: 2.5rem;
             border-radius: 25px;
             text-align: center;
             transition: all 0.4s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(250, 128, 114, 0.2);
         }
@@ -328,7 +343,7 @@
             font-size: 3.5rem;
             color: var(--primary-color);
             margin-bottom: 1.5rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .service-card h3 {
@@ -378,10 +393,10 @@
         }
 
         .specialty-group {
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             padding: 3rem;
             border-radius: 25px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(15px);
             border: 1px solid rgba(250, 128, 114, 0.2);
         }
@@ -408,7 +423,7 @@
 
         .specialty-item {
             padding: 15px 20px;
-            background: linear-gradient(135deg, var(--accent-color), rgba(255,255,255,0.8));
+            background: linear-gradient(135deg, var(--accent-color), rgba(255, 255, 255, 0.8));
             border-radius: 15px;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -453,8 +468,13 @@
         }
 
         @keyframes slowRotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .contributions-content {
@@ -486,10 +506,10 @@
         }
 
         .contribution-card {
-            background: rgba(255,255,255,0.9);
+            background: rgba(255, 255, 255, 0.9);
             padding: 2.5rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(250, 128, 114, 0.2);
             transition: all 0.3s ease;
@@ -518,7 +538,7 @@
             font-weight: 500;
             margin-bottom: 1rem;
             padding: 15px;
-            background: linear-gradient(135deg, var(--accent-color), rgba(255,255,255,0.5));
+            background: linear-gradient(135deg, var(--accent-color), rgba(255, 255, 255, 0.5));
             border-radius: 10px;
             border-left: 4px solid var(--primary-color);
         }
@@ -562,17 +582,17 @@
         }
 
         .contact-item {
-            background: rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.15);
             padding: 3rem 2rem;
             border-radius: 20px;
             backdrop-filter: blur(15px);
             transition: all 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .contact-item:hover {
             transform: translateY(-10px);
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .contact-item i {
@@ -596,18 +616,41 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.8rem; }
-            .hero .subtitle { font-size: 1.3rem; }
-            .cta-buttons { 
-                flex-direction: column; 
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.3rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
                 align-items: center;
                 gap: 1rem;
             }
-            .specialties-content { grid-template-columns: 1fr; gap: 2rem; }
-            .services-grid { grid-template-columns: 1fr; }
-            .section-title { font-size: 2.2rem; }
-            .hero { padding: 120px 0 80px; min-height: auto; }
-            .contributions-grid { grid-template-columns: 1fr; }
+
+            .specialties-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+                min-height: auto;
+            }
+
+            .contributions-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Scroll animations */
@@ -637,6 +680,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -671,9 +715,12 @@
             <h2 class="section-title fade-in">Profissional Rara no Mercado</h2>
             <div class="about-content fade-in">
                 <div class="highlight-text">
-                    Especializada no diagnóstico e tratamento de doenças que afetam a visão relacionadas ao sistema nervoso.
+                    Especializada no diagnóstico e tratamento de doenças que afetam a visão relacionadas ao sistema
+                    nervoso.
                 </div>
-                <p style="font-size: 1.2rem; line-height: 1.8;">Atendimento em Minas Gerais, Sul da Bahia e Espírito Santo. Especialista em casos de dores de cabeça com alterações visuais. Diagnósticos precisos para tontura e visão embaçada. Cuidado acolhedor para mulheres com sintomas neurológicos.</p>
+                <p style="font-size: 1.2rem; line-height: 1.8;">Atendimento em Minas Gerais, Sul da Bahia e Espírito
+                    Santo. Especialista em casos de dores de cabeça com alterações visuais. Diagnósticos precisos para
+                    tontura e visão embaçada. Cuidado acolhedor para mulheres com sintomas neurológicos.</p>
             </div>
         </div>
     </section>
@@ -687,21 +734,24 @@
                         <i class="fas fa-user-md"></i>
                     </div>
                     <h3>Consulta Presencial</h3>
-                    <p>Avaliação completa para pacientes com dores de cabeça, tontura, visão embaçada e suspeita de problemas neurológicos.</p>
+                    <p>Avaliação completa para pacientes com dores de cabeça, tontura, visão embaçada e suspeita de
+                        problemas neurológicos.</p>
                 </div>
                 <div class="service-card fade-in">
                     <div class="service-icon">
                         <i class="fas fa-microscope"></i>
                     </div>
                     <h3>Exames Especializados</h3>
-                    <p>Propedêutica, Ishihara, Retinografia, OCT e Campo Visual Computadorizado para diagnóstico preciso.</p>
+                    <p>Propedêutica, Ishihara, Retinografia, OCT e Campo Visual Computadorizado para diagnóstico
+                        preciso.</p>
                 </div>
                 <div class="service-card fade-in">
                     <div class="service-icon">
                         <i class="fas fa-stethoscope"></i>
                     </div>
                     <h3>Acompanhamento Especializado</h3>
-                    <p>Cuidado continuado para pacientes com AVC, sequelas de derrame e outras condições neurológicas.</p>
+                    <p>Cuidado continuado para pacientes com AVC, sequelas de derrame e outras condições neurológicas.
+                    </p>
                 </div>
             </div>
         </div>
@@ -746,14 +796,15 @@
             <div class="contributions-content">
                 <h2 class="section-title fade-in">Avanços em Neuro-oftalmologia</h2>
                 <p class="contributions-intro fade-in">Como nossa especialidade revoluciona o diagnóstico médico</p>
-                
+
                 <div class="contributions-grid">
                     <div class="contribution-card fade-in">
                         <div class="contribution-icon">
                             <i class="fas fa-brain"></i>
                         </div>
                         <h3>Diagnóstico Precoce</h3>
-                        <div class="contribution-item">Diagnóstico precoce de tumores cerebrais através do exame de fundo de olho</div>
+                        <div class="contribution-item">Diagnóstico precoce de tumores cerebrais através do exame de
+                            fundo de olho</div>
                         <div class="contribution-item">OCT detecta esclerose múltipla anos antes dos sintomas</div>
                     </div>
                     <div class="contribution-card fade-in">
@@ -761,7 +812,8 @@
                             <i class="fas fa-eye"></i>
                         </div>
                         <h3>Prevenção Visual</h3>
-                        <div class="contribution-item">Identificação de hipertensão intracraniana antes de sintomas graves</div>
+                        <div class="contribution-item">Identificação de hipertensão intracraniana antes de sintomas
+                            graves</div>
                         <div class="contribution-item">Exame de campo visual identifica lesões cerebrais mínimas</div>
                     </div>
                     <div class="contribution-card fade-in">
@@ -769,7 +821,8 @@
                             <i class="fas fa-microscope"></i>
                         </div>
                         <h3>Inovações Científicas</h3>
-                        <div class="contribution-item">Detecção de esclerose múltipla através de alterações do nervo óptico</div>
+                        <div class="contribution-item">Detecção de esclerose múltipla através de alterações do nervo
+                            óptico</div>
                         <div class="contribution-item">Prevenção de sequelas visuais em pacientes com AVC</div>
                     </div>
                 </div>
@@ -780,14 +833,16 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title" style="color: white;">Agende sua Consulta</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 2rem; font-weight: 300;">Cuide da sua saúde visual com quem entende de neuro-oftalmologia</p>
-            
+            <p style="font-size: 1.3rem; margin-bottom: 2rem; font-weight: 300;">Cuide da sua saúde visual com quem
+                entende de neuro-oftalmologia</p>
+
             <div class="contact-info">
                 <div class="contact-item fade-in">
                     <i class="fab fa-whatsapp"></i>
                     <h3>WhatsApp</h3>
                     <p>Agendamento rápido via Oculatus</p>
-                    <a href="#" class="btn btn-secondary" style="color: white; border-color: white; margin-top: 1.5rem;">
+                    <a href="#" class="btn btn-secondary"
+                        style="color: white; border-color: white; margin-top: 1.5rem;">
                         <i class="fab fa-whatsapp"></i>
                         Agendar pelo WhatsApp
                     </a>
@@ -801,7 +856,8 @@
                     <i class="fab fa-instagram"></i>
                     <h3>Instagram</h3>
                     <p>Siga para dicas e informações</p>
-                    <a href="#" class="btn btn-secondary" style="color: white; border-color: white; margin-top: 1.5rem;">
+                    <a href="#" class="btn btn-secondary"
+                        style="color: white; border-color: white; margin-top: 1.5rem;">
                         <i class="fab fa-instagram"></i>
                         Seguir
                     </a>
@@ -818,602 +874,451 @@
     </footer>
 
     <script>
-        // UTM Configurations
-const utmConfigurations = [
-    {
-        name: 'salmon_classic',
-        colors: {
-            '--primary-color': '#FA8072',
-            '--secondary-color': '#FFB6A3',
-            '--accent-color': '#F4E6E6',
-            '--background-color': '#FFF8F3'
-        },
-        utm_source: 'google',
-        utm_medium: 'cpc',
-        utm_campaign: 'neuro_oftalmologia_classic',
-        
-        // Hero Section
-        title_main: 'Dra. Rayssa Diniz',
-        subtitle: 'A Única Neuro-oftalmologista da Região',
-        
-        // Section 1 - About (Target: Patients - Friendly tone)
-        section1_visible: true,
-        section1_title: 'Profissional Rara no Mercado',
-        section1_text: 'Especializada no diagnóstico e tratamento de doenças que afetam a visão relacionadas ao sistema nervoso.',
-        section1_text_list: [
-            'Atendimento em Minas Gerais, Sul da Bahia e Espírito Santo',
-            'Especialista em casos de dores de cabeça com alterações visuais',
-            'Diagnósticos precisos para tontura e visão embaçada',
-            'Cuidado acolhedor para mulheres com sintomas neurológicos'
-        ],
-        section1_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=400&fit=crop&crop=center',
-        
-        // Section 2 - Services
-        section2_visible: true,
-        section2_title: 'Serviços Especializados',
-        section2_text: 'Consultas e exames para pacientes com sintomas neurológicos',
-        section2_text2: 'Atendimento acolhedor na Oculatus - Belo Horizonte',
-        section2_image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&h=800&fit=crop&crop=center',
-        
-        // Services content
-        service1_title: 'Consulta Presencial',
-        service1_text: 'Avaliação completa para pacientes com dores de cabeça, tontura, visão embaçada e suspeita de problemas neurológicos.',
-        service2_title: 'Exames Especializados',
-        service2_text: 'Propedêutica, Ishihara, Retinografia, OCT e Campo Visual Computadorizado para diagnóstico preciso.',
-        service3_title: 'Acompanhamento Especializado',
-        service3_text: 'Cuidado continuado para pacientes com AVC, sequelas de derrame e outras condições neurológicas.',
-        
-        // Section 3 - Specialties (For Patients)
-        section3_visible: true,
-        section3_title: 'Quando Procurar Ajuda',
-        section3_text: 'Sintomas que necessitam avaliação neuro-oftalmológica',
-        section3_text_list: [
-            'Dores de cabeça persistentes com alterações visuais',
-            'Tontura associada a problemas de visão',
-            'Visão dupla ou perda súbita da visão'
-        ],
-        section3_item1: 'Dores de cabeça persistentes',
-        section3_item2: 'Tontura e alterações visuais',
-        section3_image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=1200&fit=crop&crop=center',
-        
-        // Section 4 - Medical Contributions
-        section4_visible: true,
-        section4_title: 'Avanços em Neuro-oftalmologia',
-        section4_text: 'Como nossa especialidade revoluciona o diagnóstico médico',
-        section4_text_list: [
-            'Diagnóstico precoce de tumores cerebrais através do exame de fundo de olho',
-            'Identificação de hipertensão intracraniana antes de sintomas graves',
-            'Detecção de esclerose múltipla através de alterações do nervo óptico',
-            'Prevenção de sequelas visuais em pacientes com AVC'
-        ],
-        section4_item1: 'OCT detecta esclerose múltipla anos antes dos sintomas',
-        section4_item2: 'Exame de campo visual identifica lesões cerebrais mínimas',
-        section4_image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=1200&fit=crop&crop=center',
+        const utmConfigurations = [
+            {
+                name: 'salmon_classic',
+                colors: {
+                    '--primary-color': '#FA8072',
+                    '--secondary-color': '#FFB6A3',
+                    '--accent-color': '#F4E6E6',
+                    '--background-color': '#FFF8F3'
+                },
+                utm_source: 'google',
+                utm_medium: 'cpc',
+                utm_campaign: 'neuro_oftalmologia_classic',
 
-        // Section 4 - Medical Contributions
-    const section4 = document.querySelector('.contributions');
-    if (section4) {
-        section4.style.display = config.section4_visible ? 'block' : 'none';
-        
-        const section4Title = section4.querySelector('.section-title');
-        const section4Text = section4.querySelector('.contributions-intro');
-        const section4Items = section4.querySelectorAll('.contribution-item');
-        
-        if (section4Title) section4Title.textContent = config.section4_title;
-        if (section4Text) section4Text.textContent = config.section4_text;
-        
-        // Update contribution items
-        if (section4Items[0] && config.section4_item1) {
-            section4Items[0].textContent = config.section4_item1;
+                // Hero Section
+                title_main: 'Dra. Rayssa Diniz',
+                subtitle: 'A Única Neuro-oftalmologista da Região',
+
+                // Section 1 - About (Target: Patients - Friendly tone)
+                section1_visible: true,
+                section1_title: 'Profissional Rara no Mercado',
+                section1_text: 'Especializada no diagnóstico e tratamento de doenças que afetam a visão relacionadas ao sistema nervoso.',
+                section1_text_list: [
+                    'Atendimento em Minas Gerais, Sul da Bahia e Espírito Santo',
+                    'Especialista em casos de dores de cabeça com alterações visuais',
+                    'Diagnósticos precisos para tontura e visão embaçada',
+                    'Cuidado acolhedor para mulheres com sintomas neurológicos'
+                ],
+                section1_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=400&fit=crop&crop=center',
+
+                // Section 2 - Services
+                section2_visible: true,
+                section2_title: 'Serviços Especializados',
+                section2_text: 'Consultas e exames para pacientes com sintomas neurológicos',
+                section2_text2: 'Atendimento acolhedor na Oculatus - Belo Horizonte',
+                section2_image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&h=800&fit=crop&crop=center',
+
+                // Services content
+                service1_title: 'Consulta Presencial',
+                service1_text: 'Avaliação completa para pacientes com dores de cabeça, tontura, visão embaçada e suspeita de problemas neurológicos.',
+                service2_title: 'Exames Especializados',
+                service2_text: 'Propedêutica, Ishihara, Retinografia, OCT e Campo Visual Computadorizado para diagnóstico preciso.',
+                service3_title: 'Acompanhamento Especializado',
+                service3_text: 'Cuidado continuado para pacientes com AVC, sequelas de derrame e outras condições neurológicas.',
+
+                // Section 3 - Specialties (For Patients)
+                section3_visible: true,
+                section3_title: 'Quando Procurar Ajuda',
+                section3_text: 'Sintomas que necessitam avaliação neuro-oftalmológica',
+                section3_text_list: [
+                    'Dores de cabeça persistentes com alterações visuais',
+                    'Tontura associada a problemas de visão',
+                    'Visão dupla ou perda súbita da visão'
+                ],
+                section3_item1: 'Dores de cabeça persistentes',
+                section3_item2: 'Tontura e alterações visuais',
+                section3_image: 'https://images.unsplash.com/photo-1645927790904-b307b37e276a?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
+                // Section 4 - Medical Contributions
+                section4_visible: true,
+                section4_title: 'Avanços em Neuro-oftalmologia',
+                section4_text: 'Como nossa especialidade revoluciona o diagnóstico médico',
+                section4_text_list: [
+                    'Diagnóstico precoce de tumores cerebrais através do exame de fundo de olho',
+                    'Identificação de hipertensão intracraniana antes de sintomas graves',
+                    'Detecção de esclerose múltipla através de alterações do nervo óptico',
+                    'Prevenção de sequelas visuais em pacientes com AVC'
+                ],
+                section4_item1: 'OCT detecta esclerose múltipla anos antes dos sintomas',
+                section4_item2: 'Exame de campo visual identifica lesões cerebrais mínimas',
+                section4_image: 'https://media.istockphoto.com/id/514166630/pt/foto/fundo-da-c%C3%A2mara-utilizar-para-exame-do-olho-no-hospital.jpg',
+
+                // Contact Section
+                contact_title: 'Agende sua Consulta',
+                contact_text: 'Cuide da sua saúde visual com quem entende de neuro-oftalmologia'
+            },
+            {
+                name: 'medical_blue',
+                colors: {
+                    '--primary-color': '#4A90E2',
+                    '--secondary-color': '#7FB3D3',
+                    '--accent-color': '#E6F2FF',
+                    '--background-color': '#F0F8FF'
+                },
+                utm_source: 'facebook',
+                utm_medium: 'social',
+                utm_campaign: 'interconsulta_medica',
+
+                // Hero Section (Target: Medical professionals - Technical tone)
+                title_main: 'Dra. Rayssa Diniz',
+                subtitle: 'Neuro-oftalmologista CRM 76282 | RQE 66941',
+
+                // Section 1 - About (For Doctors)
+                section1_visible: true,
+                section1_title: 'Interconsulta Neuro-oftalmológica',
+                section1_text: 'Especialista em diagnóstico diferencial de patologias do nervo óptico e sistema visual relacionadas ao SNC.',
+                section1_text_list: [
+                    'Graduação em Medicina e especialização em Neuro-oftalmologia',
+                    'Expertise em hipertensão intracraniana idiopática',
+                    'Diagnóstico de neuropatias ópticas complexas',
+                    'Interface neurologia-oftalmologia para casos multidisciplinares'
+                ],
+                section1_image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&h=400&fit=crop&crop=center',
+
+                // Section 2 - Services (For Doctors)
+                section2_visible: true,
+                section2_title: 'Avaliação Especializada',
+                section2_text: 'Propedêutica neuro-oftalmológica completa',
+                section2_text2: 'Correlação clínico-radiológica para casos complexos',
+                section2_image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=800&fit=crop&crop=center',
+
+                // Services content (Technical)
+                service1_title: 'Avaliação do Disco Óptico',
+                service1_text: 'Diferencial entre edema de papila, pseudopapiledema e atrofia óptica. OCT RNFL e análise morfológica detalhada.',
+                service2_title: 'Campimetria Especializada',
+                service2_text: 'Campo visual computadorizado com interpretação neuro-oftalmológica para defeitos hemianópsicos e altitudinais.',
+                service3_title: 'Interconsulta Médica',
+                service3_text: 'Parecer especializado para neurologia, endocrinologia, reumatologia e geriatria com correlação anatômica.',
+
+                // Section 3 - Medical Specialties
+                section3_visible: true,
+                section3_title: 'Indicações Clínicas',
+                section3_text: 'Principais patologias para interconsulta',
+                section3_text_list: [
+                    'Hipertensão intracraniana com papiledema',
+                    'Neuropatias ópticas isquêmicas e inflamatórias',
+                    'Diplopia de origem neurológica'
+                ],
+                section3_item1: 'Hipertensão intracraniana idiopática',
+                section3_item2: 'Neuropatia óptica isquêmica anterior',
+                section3_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=1200&fit=crop&crop=center',
+
+                // Section 4 - Medical Contributions (For Doctors)
+                section4_visible: true,
+                section4_title: 'Neuro-oftalmologia na Medicina Moderna',
+                section4_text: 'Contribuições científicas para diagnóstico diferencial',
+                section4_text_list: [
+                    'OCT-RNFL como biomarcador precoce de neurodegeneração',
+                    'Correlação anatomoclínica em lesões da via visual',
+                    'Protocolo de investigação para papiledema de etiologia obscura',
+                    'Algoritmos diagnósticos para neuropatias ópticas'
+                ],
+                section4_item1: 'Espessura RNFL prediz conversão para esclerose múltipla definitiva',
+                section4_item2: 'Análise do campo visual localiza lesões supragenuais com precisão',
+                section4_image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=1200&fit=crop&crop=center',
+
+                // Contact Section (For Doctors)
+                contact_title: 'Solicitar Interconsulta',
+                contact_text: 'Parecer especializado em neuro-oftalmologia para seus pacientes'
+            },
+            {
+                name: 'feminine_green',
+                colors: {
+                    '--primary-color': '#50C878',
+                    '--secondary-color': '#90EE90',
+                    '--accent-color': '#E6F7E6',
+                    '--background-color': '#F0FFF0'
+                },
+                utm_source: 'instagram',
+                utm_medium: 'social',
+                utm_campaign: 'mulheres_saude_visual',
+
+                // Hero Section (Target: Women 20+ - Friendly tone)
+                title_main: 'Dra. Rayssa Diniz',
+                subtitle: 'Cuidado Especializado para Mulheres',
+
+                // Section 1 - About (For Women)
+                section1_visible: true,
+                section1_title: 'Entendemos suas Necessidades',
+                section1_text: 'Especialista que compreende os sintomas neurológicos que afetam especialmente as mulheres.',
+                section1_text_list: [
+                    'Atendimento acolhedor para mulheres de todas as idades',
+                    'Compreensão dos sintomas relacionados a hormônios',
+                    'Experiência com enxaquecas e alterações visuais',
+                    'Cuidado especializado durante gravidez e menopausa'
+                ],
+                section1_image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&h=400&fit=crop&crop=center',
+
+                // Section 2 - Services (For Women)
+                section2_visible: true,
+                section2_title: 'Cuidado Personalizado',
+                section2_text: 'Atendimento pensado especialmente para mulheres',
+                section2_text2: 'Ambiente acolhedor na Oculatus',
+                section2_image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&h=800&fit=crop&crop=center',
+
+                // Services content (Women-focused)
+                service1_title: 'Consulta Acolhedora',
+                service1_text: 'Tempo dedicado para entender seus sintomas, com atenção especial às queixas de enxaqueca e alterações visuais.',
+                service2_title: 'Exames Confortáveis',
+                service2_text: 'Realização de exames em ambiente tranquilo, com explicação detalhada de cada procedimento.',
+                service3_title: 'Acompanhamento Contínuo',
+                service3_text: 'Seguimento especializado para mulheres com condições crônicas como enxaqueca e hipertensão intracraniana.',
+
+                // Section 3 - Women's Symptoms
+                section3_visible: true,
+                section3_title: 'Sintomas Comuns em Mulheres',
+                section3_text: 'Sinais que merecem atenção especializada',
+                section3_text_list: [
+                    'Enxaquecas com alterações visuais',
+                    'Tonturas relacionadas a mudanças hormonais',
+                    'Visão embaçada durante gravidez'
+                ],
+                section3_item1: 'Enxaqueca com aura visual',
+                section3_item2: 'Alterações visuais hormonais',
+                section3_image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=1200&fit=crop&crop=center',
+
+                // Section 4 - Medical Contributions (For Women)
+                section4_visible: true,
+                section4_title: 'Descobertas que Beneficiam as Mulheres',
+                section4_text: 'Como a neuro-oftalmologia protege a saúde feminina',
+                section4_text_list: [
+                    'Detecção precoce de hipertensão intracraniana idiopática em mulheres jovens',
+                    'Identificação de alterações visuais relacionadas à gravidez',
+                    'Diagnóstico diferencial de enxaquecas com componente visual',
+                    'Prevenção de complicações visuais em distúrbios hormonais'
+                ],
+                section4_item1: 'Mulheres têm 8x mais risco de hipertensão intracraniana idiopática',
+                section4_item2: 'Alterações hormonais podem mascarar sintomas neurológicos graves',
+                section4_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=1200&fit=crop&crop=center',
+
+                // Contact Section (For Women)
+                contact_title: 'Cuide de Você',
+                contact_text: 'Agende sua consulta em um ambiente pensado para o bem-estar feminino'
+            },
+            {
+                name: 'avc_purple',
+                colors: {
+                    '--primary-color': '#8A2BE2',
+                    '--secondary-color': '#BA55D3',
+                    '--accent-color': '#F3E5F5',
+                    '--background-color': '#FAF0FF'
+                },
+                utm_source: 'email',
+                utm_medium: 'newsletter',
+                utm_campaign: 'avc_sequelas_visuais',
+
+                // Hero Section (Target: AVC patients/families - Caring tone)
+                title_main: 'Dra. Rayssa Diniz',
+                subtitle: 'Especialista em Sequelas Visuais de AVC',
+
+                // Section 1 - About (AVC Focus)
+                section1_visible: true,
+                section1_title: 'Recuperação após AVC',
+                section1_text: 'Especialista em avaliar e tratar as alterações visuais que podem ocorrer após um AVC ou derrame.',
+                section1_text_list: [
+                    'Experiência em sequelas visuais de AVC',
+                    'Avaliação de campos visuais alterados',
+                    'Orientação para reabilitação visual',
+                    'Acompanhamento especializado pós-AVC'
+                ],
+                section1_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=400&fit=crop&crop=center',
+
+                // Section 2 - Services (AVC Recovery)
+                section2_visible: true,
+                section2_title: 'Cuidado Especializado pós-AVC',
+                section2_text: 'Avaliação completa das alterações visuais',
+                section2_text2: 'Orientação para melhor qualidade de vida',
+                section2_image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=800&fit=crop&crop=center',
+
+                // Services content (AVC-focused)
+                service1_title: 'Avaliação Pós-AVC',
+                service1_text: 'Exame detalhado das funções visuais afetadas pelo AVC, incluindo campo visual e movimentos oculares.',
+                service2_title: 'Campo Visual Especializado',
+                service2_text: 'Mapeamento preciso das áreas de visão comprometidas para orientar reabilitação e adaptações.',
+                service3_title: 'Orientação Familiar',
+                service3_text: 'Suporte e orientação para familiares sobre como auxiliar na adaptação às alterações visuais.',
+
+                // Section 3 - AVC Symptoms
+                section3_visible: true,
+                section3_title: 'Sinais de Alerta',
+                section3_text: 'Alterações visuais que necessitam avaliação',
+                section3_text_list: [
+                    'Perda de campo visual após AVC',
+                    'Visão dupla ou alterações do movimento ocular',
+                    'Dificuldades visuais para atividades diárias'
+                ],
+                section3_item1: 'Hemianopsia pós-AVC',
+                section3_item2: 'Diplopia neurológica',
+                section3_image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=1200&fit=crop&crop=center',
+
+                // Section 4 - Medical Contributions (AVC Recovery)
+                section4_visible: true,
+                section4_title: 'Inovações em Recuperação Pós-AVC',
+                section4_text: 'Avanços científicos que melhoram a recuperação visual',
+                section4_text_list: [
+                    'Técnicas de mapeamento cerebral para predizer recuperação visual',
+                    'Protocolos de reabilitação visual baseados em neuroplasticidade',
+                    'Identificação precoce de áreas visuais preservadas pós-AVC',
+                    'Terapias adaptativas para maximizar função visual residual'
+                ],
+                section4_item1: 'Neuroplasticidade visual pode recuperar até 40% da função perdida',
+                section4_item2: 'Reabilitação precoce aumenta chances de recuperação em 3x',
+                section4_image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=1200&fit=crop&crop=center',
+
+                // Contact Section (AVC Recovery)
+                contact_title: 'Recupere sua Qualidade de Vida',
+                contact_text: 'Cuidado especializado para superar as sequelas visuais do AVC'
+            }
+        ];
+        // Function to apply theme colors
+        function applyThemeColors(config) {
+            const root = document.documentElement;
+            Object.entries(config.colors).forEach(([property, value]) => {
+                root.style.setProperty(property, value);
+            });
         }
-        if (section4Items[1] && config.section4_item2) {
-            section4Items[1].textContent = config.section4_item2;
-        }
-    }
-    
-    // Contact Section
-        contact_title: 'Agende sua Consulta',
-        contact_text: 'Cuide da sua saúde visual com quem entende de neuro-oftalmologia'
-    },
-    {
-        name: 'medical_blue',
-        colors: {
-            '--primary-color': '#4A90E2',
-            '--secondary-color': '#7FB3D3',
-            '--accent-color': '#E6F2FF',
-            '--background-color': '#F0F8FF'
-        },
-        utm_source: 'facebook',
-        utm_medium: 'social',
-        utm_campaign: 'interconsulta_medica',
-        
-        // Hero Section (Target: Medical professionals - Technical tone)
-        title_main: 'Dra. Rayssa Diniz',
-        subtitle: 'Neuro-oftalmologista CRM 76282 | RQE 66941',
-        
-        // Section 1 - About (For Doctors)
-        section1_visible: true,
-        section1_title: 'Interconsulta Neuro-oftalmológica',
-        section1_text: 'Especialista em diagnóstico diferencial de patologias do nervo óptico e sistema visual relacionadas ao SNC.',
-        section1_text_list: [
-            'Graduação em Medicina e especialização em Neuro-oftalmologia',
-            'Expertise em hipertensão intracraniana idiopática',
-            'Diagnóstico de neuropatias ópticas complexas',
-            'Interface neurologia-oftalmologia para casos multidisciplinares'
-        ],
-        section1_image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&h=400&fit=crop&crop=center',
-        
-        // Section 2 - Services (For Doctors)
-        section2_visible: true,
-        section2_title: 'Avaliação Especializada',
-        section2_text: 'Propedêutica neuro-oftalmológica completa',
-        section2_text2: 'Correlação clínico-radiológica para casos complexos',
-        section2_image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=800&fit=crop&crop=center',
-        
-        // Services content (Technical)
-        service1_title: 'Avaliação do Disco Óptico',
-        service1_text: 'Diferencial entre edema de papila, pseudopapiledema e atrofia óptica. OCT RNFL e análise morfológica detalhada.',
-        service2_title: 'Campimetria Especializada',
-        service2_text: 'Campo visual computadorizado com interpretação neuro-oftalmológica para defeitos hemianópsicos e altitudinais.',
-        service3_title: 'Interconsulta Médica',
-        service3_text: 'Parecer especializado para neurologia, endocrinologia, reumatologia e geriatria com correlação anatômica.',
-        
-        // Section 3 - Medical Specialties
-        section3_visible: true,
-        section3_title: 'Indicações Clínicas',
-        section3_text: 'Principais patologias para interconsulta',
-        section3_text_list: [
-            'Hipertensão intracraniana com papiledema',
-            'Neuropatias ópticas isquêmicas e inflamatórias',
-            'Diplopia de origem neurológica'
-        ],
-        section3_item1: 'Hipertensão intracraniana idiopática',
-        section3_item2: 'Neuropatia óptica isquêmica anterior',
-        section3_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=1200&fit=crop&crop=center',
-        
-        // Section 4 - Medical Contributions (For Doctors)
-        section4_visible: true,
-        section4_title: 'Neuro-oftalmologia na Medicina Moderna',
-        section4_text: 'Contribuições científicas para diagnóstico diferencial',
-        section4_text_list: [
-            'OCT-RNFL como biomarcador precoce de neurodegeneração',
-            'Correlação anatomoclínica em lesões da via visual',
-            'Protocolo de investigação para papiledema de etiologia obscura',
-            'Algoritmos diagnósticos para neuropatias ópticas'
-        ],
-        section4_item1: 'Espessura RNFL prediz conversão para esclerose múltipla definitiva',
-        section4_item2: 'Análise do campo visual localiza lesões supragenuais com precisão',
-        section4_image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=1200&fit=crop&crop=center',
 
-        // Contact Section (For Doctors)
-        contact_title: 'Solicitar Interconsulta',
-        contact_text: 'Parecer especializado em neuro-oftalmologia para seus pacientes'
-    },
-    {
-        name: 'feminine_green',
-        colors: {
-            '--primary-color': '#50C878',
-            '--secondary-color': '#90EE90',
-            '--accent-color': '#E6F7E6',
-            '--background-color': '#F0FFF0'
-        },
-        utm_source: 'instagram',
-        utm_medium: 'social',
-        utm_campaign: 'mulheres_saude_visual',
-        
-        // Hero Section (Target: Women 20+ - Friendly tone)
-        title_main: 'Dra. Rayssa Diniz',
-        subtitle: 'Cuidado Especializado para Mulheres',
-        
-        // Section 1 - About (For Women)
-        section1_visible: true,
-        section1_title: 'Entendemos suas Necessidades',
-        section1_text: 'Especialista que compreende os sintomas neurológicos que afetam especialmente as mulheres.',
-        section1_text_list: [
-            'Atendimento acolhedor para mulheres de todas as idades',
-            'Compreensão dos sintomas relacionados a hormônios',
-            'Experiência com enxaquecas e alterações visuais',
-            'Cuidado especializado durante gravidez e menopausa'
-        ],
-        section1_image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&h=400&fit=crop&crop=center',
-        
-        // Section 2 - Services (For Women)
-        section2_visible: true,
-        section2_title: 'Cuidado Personalizado',
-        section2_text: 'Atendimento pensado especialmente para mulheres',
-        section2_text2: 'Ambiente acolhedor na Oculatus',
-        section2_image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&h=800&fit=crop&crop=center',
-        
-        // Services content (Women-focused)
-        service1_title: 'Consulta Acolhedora',
-        service1_text: 'Tempo dedicado para entender seus sintomas, com atenção especial às queixas de enxaqueca e alterações visuais.',
-        service2_title: 'Exames Confortáveis',
-        service2_text: 'Realização de exames em ambiente tranquilo, com explicação detalhada de cada procedimento.',
-        service3_title: 'Acompanhamento Contínuo',
-        service3_text: 'Seguimento especializado para mulheres com condições crônicas como enxaqueca e hipertensão intracraniana.',
-        
-        // Section 3 - Women\'s Symptoms
-        section3_visible: true,
-        section3_title: 'Sintomas Comuns em Mulheres',
-        section3_text: 'Sinais que merecem atenção especializada',
-        section3_text_list: [
-            'Enxaquecas com alterações visuais',
-            'Tonturas relacionadas a mudanças hormonais',
-            'Visão embaçada durante gravidez'
-        ],
-        section3_item1: 'Enxaqueca com aura visual',
-        section3_item2: 'Alterações visuais hormonais',
-        section3_image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=1200&fit=crop&crop=center',
-        
-        // Section 4 - Medical Contributions (For Women)
-        section4_visible: true,
-        section4_title: 'Descobertas que Beneficiam as Mulheres',
-        section4_text: 'Como a neuro-oftalmologia protege a saúde feminina',
-        section4_text_list: [
-            'Detecção precoce de hipertensão intracraniana idiopática em mulheres jovens',
-            'Identificação de alterações visuais relacionadas à gravidez',
-            'Diagnóstico diferencial de enxaquecas com componente visual',
-            'Prevenção de complicações visuais em distúrbios hormonais'
-        ],
-        section4_item1: 'Mulheres têm 8x mais risco de hipertensão intracraniana idiopática',
-        section4_item2: 'Alterações hormonais podem mascarar sintomas neurológicos graves',
-        section4_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=1200&fit=crop&crop=center',
+        // Function to apply content based on configuration
+        function applyContent(config) {
+            // Hero Section
+            const titleMain = document.querySelector('.hero h1');
+            const subtitle = document.querySelector('.hero .subtitle');
+            if (titleMain) titleMain.textContent = config.title_main;
+            if (subtitle) subtitle.textContent = config.subtitle;
 
-        // Contact Section (For Women)
-        contact_title: 'Cuide de Você',
-        contact_text: 'Agende sua consulta em um ambiente pensado para o bem-estar feminino'
-    },
-    {
-        name: 'avc_purple',
-        colors: {
-            '--primary-color': '#8A2BE2',
-            '--secondary-color': '#BA55D3',
-            '--accent-color': '#F3E5F5',
-            '--background-color': '#FAF0FF'
-        },
-        utm_source: 'email',
-        utm_medium: 'newsletter',
-        utm_campaign: 'avc_sequelas_visuais',
-        
-        // Hero Section (Target: AVC patients/families - Caring tone)
-        title_main: 'Dra. Rayssa Diniz',
-        subtitle: 'Especialista em Sequelas Visuais de AVC',
-        
-        // Section 1 - About (AVC Focus)
-        section1_visible: true,
-        section1_title: 'Recuperação após AVC',
-        section1_text: 'Especialista em avaliar e tratar as alterações visuais que podem ocorrer após um AVC ou derrame.',
-        section1_text_list: [
-            'Experiência em sequelas visuais de AVC',
-            'Avaliação de campos visuais alterados',
-            'Orientação para reabilitação visual',
-            'Acompanhamento especializado pós-AVC'
-        ],
-        section1_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=400&fit=crop&crop=center',
-        
-        // Section 2 - Services (AVC Recovery)
-        section2_visible: true,
-        section2_title: 'Cuidado Especializado pós-AVC',
-        section2_text: 'Avaliação completa das alterações visuais',
-        section2_text2: 'Orientação para melhor qualidade de vida',
-        section2_image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=800&fit=crop&crop=center',
-        
-        // Services content (AVC-focused)
-        service1_title: 'Avaliação Pós-AVC',
-        service1_text: 'Exame detalhado das funções visuais afetadas pelo AVC, incluindo campo visual e movimentos oculares.',
-        service2_title: 'Campo Visual Especializado',
-        service2_text: 'Mapeamento preciso das áreas de visão comprometidas para orientar reabilitação e adaptações.',
-        service3_title: 'Orientação Familiar',
-        service3_text: 'Suporte e orientação para familiares sobre como auxiliar na adaptação às alterações visuais.',
-        
-        // Section 3 - AVC Symptoms
-        section3_visible: true,
-        section3_title: 'Sinais de Alerta',
-        section3_text: 'Alterações visuais que necessitam avaliação',
-        section3_text_list: [
-            'Perda de campo visual após AVC',
-            'Visão dupla ou alterações do movimento ocular',
-            'Dificuldades visuais para atividades diárias'
-        ],
-        section3_item1: 'Hemianopsia pós-AVC',
-        section3_item2: 'Diplopia neurológica',
-        section3_image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=1200&fit=crop&crop=center',
-        
-        // Section 4 - Medical Contributions (AVC Recovery)
-        section4_visible: true,
-        section4_title: 'Inovações em Recuperação Pós-AVC',
-        section4_text: 'Avanços científicos que melhoram a recuperação visual',
-        section4_text_list: [
-            'Técnicas de mapeamento cerebral para predizer recuperação visual',
-            'Protocolos de reabilitação visual baseados em neuroplasticidade',
-            'Identificação precoce de áreas visuais preservadas pós-AVC',
-            'Terapias adaptativas para maximizar função visual residual'
-        ],
-        section4_item1: 'Neuroplasticidade visual pode recuperar até 40% da função perdida',
-        section4_item2: 'Reabilitação precoce aumenta chances de recuperação em 3x',
-        section4_image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=1200&fit=crop&crop=center',
+            // Section 1 - About
+            const section1 = document.querySelector('.about');
+            if (section1) {
+                section1.style.display = config.section1_visible ? 'block' : 'none';
 
-        // Contact Section (AVC Recovery)
-        contact_title: 'Recupere sua Qualidade de Vida',
-        contact_text: 'Cuidado especializado para superar as sequelas visuais do AVC'
-    }
-];center',
-        
-        // Services content
-        service1_title: 'Consulta Premium',
-        service1_text: 'Atendimento exclusivo com tempo estendido, análise detalhada e plano de tratamento personalizado.',
-        service2_title: 'Diagnóstico de Elite',
-        service2_text: 'Exames com equipamentos de última geração e interpretação especializada para casos mais complexos.',
-        service3_title: 'Consultoria Executiva',
-        service3_text: 'Parecer especializado de alto nível para médicos e instituições de referência nacional e internacional.',
-        
-        // Section 3 - Specialties
-        section3_visible: true,
-        section3_title: 'Expertise Avançada',
-        section3_text: 'Especialização em casos complexos',
-        section3_text_list: [
-            'Casos raros e complexos',
-            'Segunda opinião especializada',
-            'Protocolos internacionais'
-        ],
-        section3_item1: 'Disco óptico pálido complexo',
-        section3_item2: 'Diplopia de origem central',
-        section3_image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=1200&fit=crop&crop=center',
-        
-        // Contact Section
-        contact_title: 'Agende sua Consulta Premium',
-        contact_text: 'Acesso exclusivo à expertise de referência em neuro-oftalmologia'
-    }
-];
+                const section1Title = section1.querySelector('.section-title');
+                const section1Text = section1.querySelector('.highlight-text');
+                const section1Para = section1.querySelector('.about-content p');
 
-// Function to apply theme colors
-function applyThemeColors(config) {
-    const root = document.documentElement;
-    Object.entries(config.colors).forEach(([property, value]) => {
-        root.style.setProperty(property, value);
-    });
-}
-
-// Function to apply content based on configuration
-function applyContent(config) {
-    // Hero Section
-    const titleMain = document.querySelector('.hero h1');
-    const subtitle = document.querySelector('.hero .subtitle');
-    if (titleMain) titleMain.textContent = config.title_main;
-    if (subtitle) subtitle.textContent = config.subtitle;
-    
-    // Section 1 - About
-    const section1 = document.querySelector('.about');
-    if (section1) {
-        section1.style.display = config.section1_visible ? 'block' : 'none';
-        
-        const section1Title = section1.querySelector('.section-title');
-        const section1Text = section1.querySelector('.highlight-text');
-        const section1Para = section1.querySelector('.about-content p');
-        
-        if (section1Title) section1Title.textContent = config.section1_title;
-        if (section1Text) section1Text.textContent = config.section1_text;
-        if (section1Para && config.section1_text_list) {
-            section1Para.textContent = config.section1_text_list.join('. ') + '.';
-        }
-    }
-    
-    // Section 2 - Services
-    const section2 = document.querySelector('.services');
-    if (section2) {
-        section2.style.display = config.section2_visible ? 'block' : 'none';
-        
-        const section2Title = section2.querySelector('.section-title');
-        if (section2Title) section2Title.textContent = config.section2_title;
-        
-        // Service cards
-        const serviceCards = section2.querySelectorAll('.service-card');
-        if (serviceCards[0]) {
-            const title = serviceCards[0].querySelector('h3');
-            const text = serviceCards[0].querySelector('p');
-            if (title) title.textContent = config.service1_title;
-            if (text) text.textContent = config.service1_text;
-        }
-        if (serviceCards[1]) {
-            const title = serviceCards[1].querySelector('h3');
-            const text = serviceCards[1].querySelector('p');
-            if (title) title.textContent = config.service2_title;
-            if (text) text.textContent = config.service2_text;
-        }
-        if (serviceCards[2]) {
-            const title = serviceCards[2].querySelector('h3');
-            const text = serviceCards[2].querySelector('p');
-            if (title) title.textContent = config.service3_title;
-            if (text) text.textContent = config.service3_text;
-        }
-    }
-    
-    // Section 3 - Specialties
-    const section3 = document.querySelector('.specialties');
-    if (section3) {
-        section3.style.display = config.section3_visible ? 'block' : 'none';
-        
-        const section3Title = section3.querySelector('.section-title');
-        if (section3Title) section3Title.textContent = config.section3_title;
-        
-        // Update specialty items
-        const specialtyItems = section3.querySelectorAll('.specialty-item');
-        if (specialtyItems[0] && config.section3_item1) {
-            specialtyItems[0].textContent = config.section3_item1;
-        }
-        if (specialtyItems[1] && config.section3_item2) {
-            specialtyItems[1].textContent = config.section3_item2;
-        }
-    }
-    
-    // Contact Section
-    const contactSection = document.querySelector('.contact');
-    if (contactSection) {
-        const contactTitle = contactSection.querySelector('.section-title');
-        const contactText = contactSection.querySelector('p');
-        if (contactTitle) contactTitle.textContent = config.contact_title;
-        if (contactText) contactText.textContent = config.contact_text;
-    }
-}
-
-// Function to get UTM parameters from URL
-function getUTMParameters() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return {
-        utm_source: urlParams.get('utm_source'),
-        utm_medium: urlParams.get('utm_medium'),
-        utm_campaign: urlParams.get('utm_campaign')
-    };
-}
-
-// Function to match UTM configuration
-function matchUTMConfiguration(utmParams) {
-    return utmConfigurations.find(config => 
-        config.utm_source === utmParams.utm_source &&
-        config.utm_medium === utmParams.utm_medium &&
-        config.utm_campaign === utmParams.utm_campaign
-    );
-}
-
-// Initialize theme and content based on UTM or default
-function initializeTheme() {
-    const utmParams = getUTMParameters();
-    const matchedConfig = matchUTMConfiguration(utmParams);
-    
-    if (matchedConfig) {
-        applyThemeColors(matchedConfig);
-        applyContent(matchedConfig);
-        console.log(`Applied theme: ${matchedConfig.name}`);
-    } else {
-        // Default to salmon_classic
-        applyThemeColors(utmConfigurations[0]);
-        applyContent(utmConfigurations[0]);
-        console.log('Applied default theme: salmon_classic');
-    }
-}
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                if (section1Title) section1Title.textContent = config.section1_title;
+                if (section1Text) section1Text.textContent = config.section1_text;
+                if (section1Para && config.section1_text_list) {
+                    section1Para.textContent = config.section1_text_list.join('. ') + '.';
                 }
-            });
-        });
+            }
 
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+            // Section 2 - Services
+            const section2 = document.querySelector('.services');
+            if (section2) {
+                section2.style.display = config.section2_visible ? 'block' : 'none';
 
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                const section2Title = section2.querySelector('.section-title');
+                if (section2Title) section2Title.textContent = config.section2_title;
+
+                // Service cards
+                const serviceCards = section2.querySelectorAll('.service-card');
+                if (serviceCards[0]) {
+                    const title = serviceCards[0].querySelector('h3');
+                    const text = serviceCards[0].querySelector('p');
+                    if (title) title.textContent = config.service1_title;
+                    if (text) text.textContent = config.service1_text;
                 }
-            });
-        }, observerOptions);
+                if (serviceCards[1]) {
+                    const title = serviceCards[1].querySelector('h3');
+                    const text = serviceCards[1].querySelector('p');
+                    if (title) title.textContent = config.service2_title;
+                    if (text) text.textContent = config.service2_text;
+                }
+                if (serviceCards[2]) {
+                    const title = serviceCards[2].querySelector('h3');
+                    const text = serviceCards[2].querySelector('p');
+                    if (title) title.textContent = config.service3_title;
+                    if (text) text.textContent = config.service3_text;
+                }
+            }
 
-        // Parallax effect
-        function handleParallax() {
-            const scrolled = window.pageYOffset;
-            const parallaxElements = document.querySelectorAll('.parallax');
-            
-            parallaxElements.forEach(element => {
-                const speed = element.dataset.speed || 0.5;
-                const yPos = -(scrolled * speed);
-                element.style.transform = `translateY(${yPos}px)`;
-            });
+            // Section 3 - Specialties
+            const section3 = document.querySelector('.specialties');
+            if (section3) {
+                section3.style.display = config.section3_visible ? 'block' : 'none';
+
+                const section3Title = section3.querySelector('.section-title');
+                if (section3Title) section3Title.textContent = config.section3_title;
+
+                // Update specialty items
+                const specialtyItems = section3.querySelectorAll('.specialty-item');
+                if (specialtyItems[0] && config.section3_item1) {
+                    specialtyItems[0].textContent = config.section3_item1;
+                }
+                if (specialtyItems[1] && config.section3_item2) {
+                    specialtyItems[1].textContent = config.section3_item2;
+                }
+            }
+
+            // Section 4 - Medical Contributions
+            const section4 = document.querySelector('.contributions');
+            if (section4) {
+                section4.style.display = config.section4_visible ? 'block' : 'none';
+
+                const section4Title = section4.querySelector('.section-title');
+                const section4Text = section4.querySelector('.contributions-intro');
+                const section4Items = section4.querySelectorAll('.contribution-item');
+
+                if (section4Title) section4Title.textContent = config.section4_title;
+                if (section4Text) section4Text.textContent = config.section4_text;
+
+                // Update contribution items
+                if (section4Items[0] && config.section4_item1) {
+                    section4Items[0].textContent = config.section4_item1;
+                }
+                if (section4Items[1] && config.section4_item2) {
+                    section4Items[1].textContent = config.section4_item2;
+                }
+            }
+
+            // Contact Section
+            const contactSection = document.querySelector('.contact');
+            if (contactSection) {
+                const contactTitle = contactSection.querySelector('.section-title');
+                const contactText = contactSection.querySelector('p');
+                if (contactTitle) contactTitle.textContent = config.contact_title;
+                if (contactText) contactText.textContent = config.contact_text;
+            }
         }
 
-        // Header scroll effect
-        let lastScrollTop = 0;
-        function handleScroll() {
-            const header = document.querySelector('header');
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (scrollTop > lastScrollTop && scrollTop > 100) {
-                header.style.transform = 'translateY(-100%)';
+        // Function to get UTM parameters from URL
+        function getUTMParameters() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return {
+                utm_source: urlParams.get('utm_source'),
+                utm_medium: urlParams.get('utm_medium'),
+                utm_campaign: urlParams.get('utm_campaign')
+            };
+        }
+
+        // Function to match UTM configuration
+        function matchUTMConfiguration(utmParams) {
+            return utmConfigurations.find(config =>
+                config.utm_source === utmParams.utm_source &&
+                config.utm_medium === utmParams.utm_medium &&
+                config.utm_campaign === utmParams.utm_campaign
+            );
+        }
+
+        // Initialize theme and content based on UTM or default
+        function initializeTheme() {
+            const utmParams = getUTMParameters();
+            const matchedConfig = matchUTMConfiguration(utmParams);
+
+            if (matchedConfig) {
+                applyThemeColors(matchedConfig);
+                applyContent(matchedConfig);
+                console.log(`Applied theme: ${matchedConfig.name}`);
             } else {
-                header.style.transform = 'translateY(0)';
-            }
-            
-            lastScrollTop = scrollTop;
-            handleParallax();
-        }
-
-        // Initialize everything when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize theme (will be handled by UTM script)
-            // initializeTheme();
-            
-            // Setup scroll observers
-            document.querySelectorAll('.fade-in').forEach(el => {
-                observer.observe(el);
-            });
-            
-            // Add scroll event listeners
-            window.addEventListener('scroll', handleScroll, { passive: true });
-            
-            // Add parallax class to background elements
-            document.querySelector('.hero::before')?.classList.add('parallax');
-            
-            console.log('Site initialized');
-        });
-
-        // Enhanced contact button interactions
-        document.addEventListener('click', function(e) {
-            if (e.target.closest('.btn-primary')) {
-                // Add ripple effect
-                const button = e.target.closest('.btn-primary');
-                const ripple = document.createElement('span');
-                const rect = button.getBoundingClientRect();
-                const size = Math.max(rect.width, rect.height);
-                const x = e.clientX - rect.left - size / 2;
-                const y = e.clientY - rect.top - size / 2;
-                
-                ripple.style.cssText = `
-                    position: absolute;
-                    width: ${size}px;
-                    height: ${size}px;
-                    left: ${x}px;
-                    top: ${y}px;
-                    background: rgba(255,255,255,0.3);
-                    border-radius: 50%;
-                    transform: scale(0);
-                    animation: ripple 0.6s ease-out;
-                    pointer-events: none;
-                `;
-                
-                button.style.position = 'relative';
-                button.style.overflow = 'hidden';
-                button.appendChild(ripple);
-                
-                setTimeout(() => ripple.remove(), 600);
-            }
-        });
-
-        // Performance optimization: Throttle scroll events
-        function throttle(func, limit) {
-            let inThrottle;
-            return function() {
-                const args = arguments;
-                const context = this;
-                if (!inThrottle) {
-                    func.apply(context, args);
-                    inThrottle = true;
-                    setTimeout(() => inThrottle = false, limit);
-                }
+                // Default to salmon_classic
+                applyThemeColors(utmConfigurations[0]);
+                applyContent(utmConfigurations[0]);
+                console.log('Applied default theme: salmon_classic');
             }
         }
-
-        // Apply throttling to scroll handler
-        window.addEventListener('scroll', throttle(handleScroll, 16), { passive: true });
     </script>
 </body>
+
 </html>
