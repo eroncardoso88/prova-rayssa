@@ -505,15 +505,53 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .header-cta-btn {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(250, 128, 114, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .header-cta-btn {
+                font-size: 0.8rem;
+                padding: 8px 16px;
+            }
+
+            .header-cta-btn i {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">Dra. Rayssa Diniz</div>
-            </div>
+        <div class="header-content">
+            <div class="logo">Dra. Rayssa Diniz</div>
+            <a href="#contact" class="header-cta-btn">
+                <i class="fas fa-calendar-check"></i>
+                Agendar Consulta
+            </a>
         </div>
     </header>
 
@@ -1199,6 +1237,17 @@
             window.addEventListener('scroll', handleScroll, { passive: true });
 
             console.log('Site initialized');
+        });
+
+        document.addEventListener('click', function (e) {
+            if (e.target.closest('.header-cta-btn')) {
+                // Add click animation
+                const button = e.target.closest('.header-cta-btn');
+                button.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    button.style.transform = '';
+                }, 150);
+            }
         });
     </script>
 
